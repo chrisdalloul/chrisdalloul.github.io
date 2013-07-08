@@ -57,6 +57,8 @@ body {
 }
 .facebook:hover {
 	background: rgb(19, 55, 131);
+	width: 200px;
+	font-size: 48px;
 }
 .twitter {
 	border-left: #3d464e 1px solid;
@@ -66,6 +68,8 @@ body {
 }
 .twitter:hover {
 	background: #3c8fc9;
+	width: 200px;
+	font-size: 48px
 }
 .instagram {
 	border-left: #3d464e 1px solid;
@@ -74,6 +78,8 @@ body {
 }
 .instagram:hover {
 	background-color: rgb(81,127,164);
+	width: 200px;
+	font-size: 48px
 }
 .github {
 	border-left: #3d464e 1px solid;
@@ -82,7 +88,9 @@ body {
 
 }
 .github:hover {
-	background: #989898
+	background: #989898;
+	width: 200px;
+	font-size: 48px
 }
 .contactme {
 	border-right: #3d464e 2px solid;
@@ -90,10 +98,9 @@ body {
 	padding-left: 20px;
 }
 .contactme:hover {
-	background: #00FF00
-}
-li {
-	width: 72px
+	background: #00FF00;
+	width: 200px;
+	font-size: 48px
 }
 .leftcontent h1, h2{
 	color: rgb(0, 170, 240);
@@ -119,14 +126,15 @@ li {
 	font-family: BebasNeueRegular;
 	font-weight: normal;
 	font-size:24px;
-	color: rgb(0, 170, 240);
 	display: inline;
-	border-left: #262b30 110px solid;
 	padding-left: 15px;
-}
-.leftcontent h3:hover {
 	color: black;
 	border-left: #1b1e22 110px solid;
+}
+.leftcontent h3:hover {
+	border-left: #262b30 110px solid;
+	color: rgb(0, 170, 240);
+
 }
 .leftcontent p {
 	color: #657381;
@@ -178,6 +186,11 @@ li {
 	height: 50px;
 	position: fixed;
 	bottom: 0;
-
+}
+a {
+	font-style: none;
+}
+a:visited {
+	color: lightblue
 }
 

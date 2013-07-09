@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 @font-face {
 	font-family: 'BebasNeueRegular';
 	src: url('c/BebasNeue-webfont.eot');
@@ -8,29 +10,51 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+::selection {
+       background-color: yellow;
+       color: #000;
+}
+
 * {
 	margin:0px;
 }
+
 body {
 	height: 100%;
-	background: #1f2327;
+	background-image: url('background.png');
 	padding-bottom: 35px
 }
-::selection {
-	background: yellow;
+
+img {
+	height: 150px
 }
+
 .ul {
 	list-style:none;
 }
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: lightblue
+}
+
+/*CENTERWELL*/
+
 .container {
 	width: 100%;
+	max-width: 1500px;
 	height: 177px;
 	display:block;
 	background: #3d464e;
 	font-family: BebasNeueRegular;
-	margin-top: 50px;
+	margin-top: 0px;
 
 }
+
 .container ul {
 	position: relative;
 	height: 177px;
@@ -39,6 +63,7 @@ body {
 	background: #4d5a65;
 	overflow: hidden;
 }
+
 .container li {
 	overflow: hidden;
 	width: 72px;
@@ -49,50 +74,73 @@ body {
 	cursor: pointer;
 	padding-top: 75px;
 }
+
 .facebook {
 	margin-left: 75px;
 	border-left: #3d464e 2px solid;
 	border-right: #3d464e 1px solid;
 	padding-left: 30px;
 }
+
 .facebook:hover {
 	background: rgb(19, 55, 131);
+	width: 200px;
+	font-size: 48px;
 }
+
 .twitter {
 	border-left: #3d464e 1px solid;
 	border-right: #3d464e 1px solid;
 	padding-left: 30px;
 
 }
+
 .twitter:hover {
 	background: #3c8fc9;
+	width: 200px;
+	font-size: 48px
 }
+
 .instagram {
 	border-left: #3d464e 1px solid;
 	border-right: #3d464e 1px solid;
 	padding-left: 15px;
 }
+
 .instagram:hover {
 	background-color: rgb(81,127,164);
+	width: 200px;
+	font-size: 48px
 }
+
 .github {
 	border-left: #3d464e 1px solid;
 	border-right: #3d464e 1px solid;
 	padding-left: 40px;
 
 }
+
 .github:hover {
-	background: #989898
+	background: #989898;
+	width: 200px;
+	font-size: 48px
 }
+
 .contactme {
 	border-right: #3d464e 2px solid;
 	border-left: #3d464e 1px solid;
 	padding-left: 20px;
 }
+
 .contactme:hover {
-	background: #00FF00
+	background: #00FF00;
+	width: 200px;
+	font-size: 48px
 }
-.leftcontent h1, h2{
+
+/*LEFT CONTENT*/
+
+h6, .leftcontent h1, .leftcontent h2{
 	color: rgb(0, 170, 240);
 	line-height: 33px;
 	text-decoration: none;
@@ -103,28 +151,33 @@ body {
 	letter-spacing: 1px;
 	padding-left: 125px
 }
+
 .leftcontent h2 {
 	font-size: 16px;
 	margin-bottom: 60px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Pathway Gothic One',Helvetica, Arial, sans-serif;
 	color: #657381;
 	line-height: 16px;
 	letter-spacing: 1px;
 
 }
+
 .leftcontent h3 {
 	font-family: BebasNeueRegular;
 	font-weight: normal;
 	font-size:24px;
-	color: rgb(0, 170, 240);
 	display: inline;
-	border-left: #262b30 110px solid;
 	padding-left: 15px;
-}
-.leftcontent h3:hover {
 	color: black;
 	border-left: #1b1e22 110px solid;
 }
+
+.leftcontent h3:hover {
+	border-left: #262b30 110px solid;
+	color: rgb(0, 170, 240);
+
+}
+
 .leftcontent p {
 	color: #657381;
 	font-size: 12px;
@@ -133,8 +186,11 @@ body {
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	margin-left: 125px
 }
+
+/*RIGHT CONTENT*/
+
 .rightcontent {
-	margin-top: 127px;
+	margin-top: 200px;
 	margin-right: 50px;
 	height:500px;
 	width: 190px;
@@ -145,13 +201,14 @@ body {
 	z-index: -1;
 	background: #262b30;
 	padding-top: 144px;
-   	padding-left: 15px;
-   	padding-right: 15px;
-   	padding-bottom: 40px;
-   	color: #9eaebe;
-   	font-size: 11px;
-   	overflow: hidden;
+ 	padding-left: 15px;
+ 	padding-right: 15px;
+ 	padding-bottom: 40px;
+ 	color: #9eaebe;
+ 	font-size: 14px;
+ 	overflow: hidden;
 }
+
 .rightcontent h2 {
 	color: #00aaf0;
    	font-size: 18px;
@@ -160,6 +217,7 @@ body {
    	letter-spacing: 1px;
    	margin: 0
 }
+
 .rightcontent h3{
 	color: #9eaebe;
 	font-size: 13px;
@@ -167,7 +225,66 @@ body {
 	letter-spacing: 1px;
 	line-height: 23px;
 }
+
 .rightcontent ul {
 	list-style: none;
 }
+
+/*FOOTER*/
+
+.footer {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	background: #262b30;
+	padding-left: 500px;
+}
+
+.footer:hover {
+	border-left: 550px solid blue;
+	border-right: 550px solid red;
+	width:450px;
+	background:white;
+	padding-left: 50px;
+}
+
+.footer a {
+	color: black;
+	text-decoration:none;
+	text-align: center;
+	font-family: Numans;
+	font-size:24px;
+	padding-left: 120px
+
+}
+
+/*HEADER*/
+
+h6 {
+	font-size: 16px;
+	border-left:2px solid rgb(0, 170, 240);
+	margin: 0;
+	display: inline-block;
+	padding-left: 15px;
+}
+
+.skills li{
+	font-family: numans
+
+}
+
+.cd img {
+	vertical-align: middle
+}
+
+
+
+
+
+
+
+
+
+
 

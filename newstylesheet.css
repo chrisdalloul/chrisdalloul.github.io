@@ -46,7 +46,7 @@ a:visited {
 
 .container {
 	width: 100%;
-	max-width: 1500px;
+	max-width: 1000px;
 	height: 177px;
 	display:block;
 	background: #3d464e;
@@ -215,7 +215,7 @@ h6, .leftcontent h1, .leftcontent h2{
    	font-family: BebasNeueRegular, Helvetica, Arial, sans-serif;
    	margin-bottom: 8px;
    	letter-spacing: 1px;
-   	margin: 0
+   	margin: 0;
 }
 
 .rightcontent h3{
@@ -233,20 +233,22 @@ h6, .leftcontent h1, .leftcontent h2{
 /*FOOTER*/
 
 .footer {
-	width: 100%;
+	width: 1000;
 	height: 50px;
 	position: fixed;
 	bottom: 0;
 	background: #262b30;
-	padding-left: 500px;
+/*	padding-left: 500px;
+*/
+	text-align: center;
 }
 
 .footer:hover {
-	border-left: 550px solid blue;
-	border-right: 550px solid red;
-	width:450px;
-	background:white;
-	padding-left: 50px;
+/*	border-left: 550px solid blue;
+	border-right: 550px solid red;*/
+	width:400px;
+	background:#414b54;
+	padding-left: 0;
 }
 
 .footer a {
@@ -255,7 +257,9 @@ h6, .leftcontent h1, .leftcontent h2{
 	text-align: center;
 	font-family: Numans;
 	font-size:24px;
-	padding-left: 120px
+	padding-left: 120px;
+	padding-right:120px;
+	padding-top: 10px;
 
 }
 
@@ -277,14 +281,3 @@ h6 {
 .cd img {
 	vertical-align: middle
 }
-
-
-
-
-
-
-
-
-
-
-

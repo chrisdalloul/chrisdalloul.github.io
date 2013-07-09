@@ -36,6 +36,7 @@ img {
 
 a {
 	text-decoration: none;
+	color: black
 }
 
 a:visited {
@@ -238,8 +239,7 @@ h6, .leftcontent h1, .leftcontent h2{
 	position: fixed;
 	bottom: 0;
 	background: #262b30;
-/*	padding-left: 500px;
-*/
+/*	padding-left: 500px;*/
 	text-align: center;
 }
 
@@ -259,7 +259,6 @@ h6, .leftcontent h1, .leftcontent h2{
 	font-size:24px;
 	padding-left: 120px;
 	padding-right:120px;
-	padding-top: 10px;
 
 }
 
